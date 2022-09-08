@@ -1,0 +1,347 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  連結錢包
+</button>
+<button class="btn btn-triangle btn-white">MORE</button>
+
+<button class="btn btn-triangle btn-border">MORE</button>
+
+<button class="btn btn-primary">連結錢包</button>
+
+<section class="index-recommend container">
+
+  <div class="row g-0 bg-white">
+    <div class="d-none d-lg-block col-lg-1 bg-black ">
+      <h2 class="text-white" style="writing-mode: vertical-lr;" >
+        Recommend
+        <span class="">推薦系列</span>
+      </h2>
+    </div>
+    <div class="col-lg-7">
+      <img src="./assets/images/art01.jpg" alt="" />
+    </div>
+    <div class="col-lg-4 d-flex flex-column">
+      <p>Kemus Wu</p>
+      <h3>瞳孔:流動的脈絡</h3>
+      <p>
+        眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。
+      </p>
+      <div class="mt-auto text-end">
+        <a href="#" class="btn btn-triangle btn-white">MORE</a>            
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="bg-cover bg-center" style="background-image: url(./assets/images/art02.jpg); height: 372px;" ></div>
+      <p>Joanne</p>
+      <h3>海洋波度</h3>
+      <p>
+        海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。
+      </p>
+      <a href="#" class="btn btn-triangle btn-white">MORE</a>
+    </div>
+    <div class="col-lg-6">
+      <!-- <img src="./assets/images/art21.jpg" alt="" /> -->
+      <div class="bg-cover bg-center" style="background-image: url(./assets/images/art21.jpg); height: 372px;" ></div>
+      <p>Michael</p>
+      <h3>我家窗前的鳥</h3>
+      <p>
+        家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+      </p>
+      <a href="#" class="btn btn-triangle btn-white">MORE</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="d-flex justify-content-between border-bottom">
+    <h2>Ranking <span class="d-none d-lg-inline">市價排行榜</span></h2>
+    <button class="btn btn-triangle btn-border">MORE</button>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex d-lg-block position-relative">
+          <div class="position-lg-absolute top-0 start-0 bg-white fs-3 fs-lg-2 px-2 py-3 py-lg-2" style="z-index: 1;">
+            <p class="index-ranking-number">1</p>
+          </div>
+          <div class="index-ranking">
+            <div class="index-ranking-image bg-cover h-100" style="background-image: url(./assets/images/art04.jpg);"></div>
+            <button class="btn btn-triangle btn-white">MORE</button>
+            <div class="triangle"></div>
+            <a href="#" class="d-lg-none position-absolute top-0 bottom-0 start-0 end-0" style="z-index: 1;"></a>
+          </div>
+        </div>
+        <div>
+          <h3>散步遇到的女人</h3>
+          <div>
+            <span>Zoe Jiang</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex">
+          <div>2</div>
+          <a href="#" class="d-block img-hover">
+            <div class="bg-cover h-100" style="background-image: url(./assets/images/art05.jpg); width: 87px;"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+        <div>
+          <h3>爆炸頭的母親</h3>
+          <div>
+            <span>Yui</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex">
+          <div>3</div>
+          <a href="#" class="d-block img-hover">
+            <div class="bg-cover h-100" style="background-image: url(./assets/images/art06.jpg); width: 87px;"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+        <div>
+          <h3>夏天的時候</h3>
+          <div>
+            <span>Bug Lin</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex">
+          <div>4</div>
+          <a href="#" class="d-block img-hover">
+            <div class="bg-cover h-100" style="background-image: url(./assets/images/art29.jpg); width: 87px;"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+        <div>
+          <h3>追求者送我的花</h3>
+          <div>
+            <span>Michael</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex">
+          <div>5</div>
+          <a href="#" class="d-block img-hover">
+            <div class="bg-cover h-100" style="background-image: url(./assets/images/art07.jpg); width: 87px;"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+        <div>
+          <h3>今天釣到的魚</h3>
+          <div>
+            <span>Wei JJ</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="d-flex d-lg-block align-items-stretch">
+        <div class="d-flex">
+          <div>6</div>
+          <a href="#" class="d-block img-hover">
+            <div class="bg-cover h-100" style="background-image: url(./assets/images/art08.jpg); width: 87px;"></div>
+            <div class="triangle"></div>
+          </a>
+        </div>
+        <div>
+          <h3>人生中的貓咪們</h3>
+          <div>
+            <span>Even Lai</span
+            ><span><i class="fa-brands fa-ethereum"></i>300</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+<section>
+  <h2>Artist 熱門藝術家</h2>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div>
+          <h3>Michael</h3>
+          <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#">MORE</a>
+        </div>
+        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <h3>Antony Wu</h3>
+          <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#">MORE</a>
+        </div>
+        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+      </div>
+      <div class="swiper-slide">
+        <div>
+          <h3>Antony Wu</h3>
+          <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#">MORE</a>
+        </div>
+        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section>
+  <h2>Artwork 最新藝術品</h2>
+  <ul>
+    <li>
+      <img src="" alt="" />
+      <h3>區塊戀-他的私生活</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>夏娃的醜聞</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>藍色啤酒海</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>沒有人愛我</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>不哭不哭眼淚是珍珠</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>十分鐘就到</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>我這樣有美嗎</h3>
+    </li>
+    <li>
+      <img src="" alt="" />
+      <h3>我真的受傷了</h3>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Join Us</h2>
+  <p>創建並出售你的藝術品</p>
+  <div class="border border-start-0 border-end-0 border-4 border-primary py-2">
+    <ul
+      class="border border-start-0 border-end-0 border-1 border-primary list-unstyled d-lg-flex"
+    >
+      <li>
+        <span><i class="fa-solid fa-wallet"></i></span>
+        <h3>設置你的錢包</h3>
+        <p>設置好您選擇的錢包後 點擊右上角的錢包圖標進行連接</p>
+      </li>
+      <li>
+        <span><i class="fa-solid fa-pen-ruler"></i></span>
+        <h3>創建您的主頁</h3>
+        <p>註冊成為會員，編輯您的資料 讓大家了解你</p>
+      </li>
+      <li>
+        <span><i class="fa-solid fa-icons"></i></span>
+        <h3>添加你的 NFT</h3>
+        <p>上傳你的作品 添加標題和描述</p>
+      </li>
+      <li>
+        <span><i class="fa-solid fa-tags"></i></span>
+        <h3>列出它們出售</h3>
+        <p>選擇出售 NFT 的方式 並設定價格，等待有緣人</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">連結你的錢包</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>MetaMask</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>Coinbase Wallet</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>WalletConnect</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>Phantom</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>Glow</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="" alt="" />
+            <span>Fortmatic</span>
+            <span class="material-symbols-outlined"> check </span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">連結錢包</button>
+      </div>
+    </div>
+  </div>
+</div>
