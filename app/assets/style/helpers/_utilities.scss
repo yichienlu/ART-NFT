@@ -87,6 +87,7 @@ $utilities: map-merge(
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
+      responsive: true, // custom
       property: border,
       values: (
         null: $border-width solid $border-color,
@@ -94,6 +95,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true, // custom
       property: border-top,
       values: (
         null: $border-width solid $border-color,
@@ -101,6 +103,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true, // custom
       property: border-right,
       class: border-end,
       values: (
@@ -109,6 +112,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true, // custom
       property: border-bottom,
       values: (
         null: $border-width solid $border-color,
@@ -116,6 +120,7 @@ $utilities: map-merge(
       )
     ),
     "border-start": (
+      responsive: true, // custom
       property: border-left,
       class: border-start,
       values: (
@@ -124,11 +129,13 @@ $utilities: map-merge(
       )
     ),
     "border-color": (
+      responsive: true, // custom
       property: border-color,
       class: border,
       values: map-merge($theme-colors, ("white": $white))
     ),
     "border-width": (
+      responsive: true, // custom
       property: border-width,
       class: border,
       values: $border-widths
@@ -137,6 +144,7 @@ $utilities: map-merge(
     // Sizing utilities
     // scss-docs-start utils-sizing
     "width": (
+      responsive: true, // custom
       property: width,
       class: w,
       values: (
@@ -518,6 +526,7 @@ $utilities: map-merge(
     // scss-docs-end utils-color
     // scss-docs-start utils-bg-color
     "background-color": (
+      responsive: true,
       property: background-color,
       class: bg,
       values: map-merge(

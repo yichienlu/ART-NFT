@@ -1,13 +1,17 @@
 // Button
 .btn-triangle {
   position: relative;
+  border-bottom: 1px solid #000;
+  font-family: 'Squada One';
+  margin-bottom: -1px;
+  margin-right: -1px;
 }
 .btn-triangle::after {
   content: "";
   display: block;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -1px;
+  bottom: -1px;
   border-left: 16px transparent solid;
   border-bottom: 16px $primary solid;
 }
@@ -44,18 +48,12 @@
 
 .index-ranking {
   position: relative;
-  @include lg {
-    height: 374px;
-  }
   .btn-triangle {
     display: none;
   }
   &:hover {
     &::after {
       content: "more";
-      @include lg {
-        content: "";
-      }
       position: absolute;
       top: 0;
       right: 0;
@@ -72,7 +70,34 @@
       display: block;
       z-index: 1;
     }
+  }
+  &-image {
+    width: 87px;
+  }
+  &-number {
+    border-right: 1px solid black;
+    p {
+      text-align: center;
+      width: 22px;
+      height: 43px;
+      line-height: 43px;    
+      font-family: 'Paytone One', sans-serif;      
+    }
 
+  }
+}
+
+.index-ranking-lg {
+.index-ranking {
+  @include lg {
+    height: 374px;
+  }
+  &:hover {
+    &::after {
+      @include lg {
+        content: "";
+      }
+    }
     @include lg {
       .btn-triangle {
         z-index: 1;
@@ -87,25 +112,83 @@
     }
   }
 
-  &-image {
-    width: 87px;
+  .index-ranking-image {
     @include lg {
       width: 100%;
-      border: 1px solid $danger;
       height: 374px;
     }
   }
+}
+@include lg {  
+  .index-ranking-number {
+    border-bottom: 1px solid black;
+    p {
 
-  &-number {
-    text-align: center;
-    width: 22px;
-    height: 43px;
-    line-height: 43px;    
-    @include lg {
-      width: 48px;
-      height: 48px;
-      line-height: 48px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+      }      
     }
+
+  }
+}
+
+// layout navbar
+.navbar-logo {
+  img {
+    height: 18px;
+    @include lg {
+      height: 40px;
+    }
+  }
+}
+.search-bar{
+  display: none;
+  position:absolute;
+  left: 0;
+  right: 0;
+  @include lg {
+    display: flex;
+    position: relative;
+    width: 432px;
+  }
+  
+  button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include lg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+
+
+.artwork-item {
+  &-hover {
+    display: none;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 8px;
+    @include lg {
+      top: 24px;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;  
+      padding: 16px;    
+    }
+  }
+  &:hover &-hover {
+    display: block;
+  }
+  button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
   }
 }
 
