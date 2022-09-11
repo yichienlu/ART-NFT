@@ -1,0 +1,463 @@
+---
+title: 市值
+layout: ./app/layout.ejs
+engine: ejs
+current: value
+---
+
+<section class="container pt-4 pt-lg-40 pb-40 pb-lg-80">
+<h2 class="text-center fw-bold fs-2 fs-lg-1 mb-3 mb-lg-2">市價排行榜</h2>
+<p class="text-center mb-3 mb-lg-5">NFT系列藝術作品排行榜！全球注目指標</p>
+
+<!-- sm -->
+<div class="d-none d-lg-flex text-end mb-3 pe-4">
+  <div style="width: 38px;"></div>
+  <div class="text-start">系列作品名稱</div>
+  <div style="width: px;"></div>
+  <div style="width: 80px;" class="ms-auto">價值</div>
+  <div style="width: 100px;">24h%</div>
+  <div style="width: 80px;">7d%</div>
+  <div style="width: 80px;">地板價</div>
+  <div style="width: 80px;">擁有者</div>
+  <div style="width: 80px;">作品數量</div>
+</div>
+
+<div class="accordion border border-top-0" id="valueAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_01">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_01" aria-expanded="true" aria-controls="collapse_01" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">1</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art29.jpg);"></div>
+          <h3 class="fs-14 fw-bold">系列作品的名稱</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>1,774.19</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+220.49%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-2.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_01" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_01" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4 text-success">+220.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-2.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_02">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_02" aria-expanded="true" aria-controls="collapse_02" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">2</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art06.jpg);"></div>
+          <h3 class="fs-14 fw-bold">夏天的時候</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>1,524.89</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+80.49%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-2.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_02" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_02" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4 text-success">+80.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-2.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_03">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_03" aria-expanded="true" aria-controls="collapse_03" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">3</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art02.jpg);"></div>
+          <h3 class="fs-14 fw-bold">海洋波度</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>1,400.59</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 100px;">-3.92%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-13.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_03" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_03" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4 text-primary">-3.92%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-13.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_04">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_04" aria-expanded="true" aria-controls="collapse_04" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">4</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art03.jpg);"></div>
+          <h3 class="fs-14 fw-bold">賴床真的很不好</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>1,224.88</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 100px;">-9.23%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-20.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_04" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_04" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4 text-primary">-9.23%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-20.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_05">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_05" aria-expanded="true" aria-controls="collapse_05" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">5</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art01.jpg);"></div>
+          <h3 class="fs-14 fw-bold">瞳孔:流動的脈絡</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>1,021.09</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+83.49%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-1.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_05" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_05" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-success">+83.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-1.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_06">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_06" aria-expanded="true" aria-controls="collapse_06" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">6</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art12.jpg);"></div>
+          <h3 class="fs-14 fw-bold">哭泣的時候</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>921.42</div>
+          <div class="text-end d-none d-lg-block  text-primary" style="width: 100px;">-9.43%</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 80px;">+183.49%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_06" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_06" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-primary">-9.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4  text-success">+183.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_07">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_07" aria-expanded="true" aria-controls="collapse_07" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">7</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art14.jpg);"></div>
+          <h3 class="fs-14 fw-bold">破碎的菠蘿麵包</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>888.88</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+20.49%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-0.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_07" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_07" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-success">+20.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-0.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_08">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_08" aria-expanded="true" aria-controls="collapse_08" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">8</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art08.jpg);"></div>
+          <h3 class="fs-14 fw-bold">人生中的貓咪們</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>770.23</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+32.49%</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 80px;">+30.23</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_08" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_08" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-success">+32.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-success">+30.23</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_09">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_09" aria-expanded="true" aria-controls="collapse_09" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">9</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art28.jpg);"></div>
+          <h3 class="fs-14 fw-bold">系列作品的名稱</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>502.31</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+13.49%</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 80px;">+50.23</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_09" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_09" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-success">+13.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-success">+50.23</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header border-top" id="heading_10">
+      <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_10" aria-expanded="true" aria-controls="collapse_10" >
+        <div class="d-flex align-items-center fs-4 pe-2 pe-lg-4">
+          <div class="py-4 border-end fs-3 text-center paytone" style="width: 38px; line-height: 32px;">10</div>
+          <div class="p-4 rounded-circle mx-2 bg-cover bg-center" style="background-image: url(./assets/images/art16.jpg);"></div>
+          <h3 class="fs-14 fw-bold">細胞小將</h3>
+          <div class="ms-auto text-end" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>420.20</div>
+          <div class="text-end d-none d-lg-block text-success" style="width: 100px;">+54.49%</div>
+          <div class="text-end d-none d-lg-block text-primary" style="width: 80px;">-12.43%</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;"><i class="fa-brands fa-ethereum me-2 fs-6"></i>2.90</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">32.1K</div>
+          <div class="text-end d-none d-lg-block" style="width: 80px;">1000</div>
+        </div>
+      </button>
+    </h2>
+    <div id="collapse_10" class="accordion-collapse collapse border-top d-lg-none" aria-labelledby="heading_10" data-bs-parent="#valueAccordion">
+      <div class="accordion-body p-3">
+        <div class="row gx-0 gy-3 justify-content-center">
+          <div class="col-4 text-center">
+            <div class="fs-14">24h%</div>
+            <div class="fs-4  text-success">+54.49%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">7d%</div>
+            <div class="fs-4 text-primary">-12.43%</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">地板價</div>
+            <div class="fs-4"><i class="fa-brands fa-ethereum me-2"></i>2.90</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">擁有者</div>
+            <div class="fs-4">32.1K</div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="fs-14">作品數量</div>
+            <div class="fs-4">1000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</section>

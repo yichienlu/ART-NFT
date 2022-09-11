@@ -1,0 +1,46 @@
+// layout navbar
+.navbar-logo {
+  img {
+    height: 18px;
+    @include lg {
+      height: 40px;
+    }
+  }
+}
+.search-bar{
+  display: none;
+  position:absolute;
+  left: 0;
+  right: 0;
+  @include lg {
+    display: flex;
+    position: relative;
+    width: 432px;
+  }
+  button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include lg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+#walletModal .modal-content {
+  a {
+    border: 1px solid #000;
+    .walletCheck {
+      display: none;
+    }
+    &:hover {
+      color: #000;
+      border-color: $primary;
+      .walletCheck {
+        display: block;
+      }
+    }
+
+  }
+
+}

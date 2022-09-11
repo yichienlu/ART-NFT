@@ -1,5 +1,5 @@
 ---
-title: Boostrap Index
+title: 首頁
 layout: ./app/layout.ejs
 engine: ejs
 current: index
@@ -210,37 +210,42 @@ current: index
     <h2 class="fs-2 me-3">Artist <span class="d-none d-lg-inline fs-4 fw-bold">熱門藝術家</span></h2>
     <button class="btn btn-triangle btn-border">MORE</button>
   </div>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
+
+  <div class="swiper artist-swiper">
     <div class="swiper-wrapper">
-      <!-- Slides -->
       <div class="swiper-slide">
-        <div>
-          <h3>Michael</h3>
+        <div class="swiper-slide-artist" style="background-image: url(./assets/images/artist01.jpg);">
+          <h3 class="text-white fs-2 fs-lg-80">Michael</h3>
           <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          <a href="#">MORE</a>
+          <button class="btn btn-triangle btn-white btn-border">MORE</button>
         </div>
-        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        <div class="d-lg-none p-4 mt-4" style="background-color: rgba(255, 255, 255, 0.85)">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
       </div>
       <div class="swiper-slide">
-        <div>
-          <h3>Antony Wu</h3>
+        <div class="swiper-slide-artist" style="background-image: url(./assets/images/artist02.jpg);">
+          <h3 class="text-white fs-2 fs-lg-80">Anthony<br>Wu</h3>
           <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          <a href="#">MORE</a>
+          <button class="btn btn-triangle btn-white btn-border">MORE</button>
         </div>
-        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        <div class="d-lg-none p-4 mt-4" style="background-color: rgba(255, 255, 255, 0.85)">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
       </div>
       <div class="swiper-slide">
-        <div>
-          <h3>Antony Wu</h3>
+        <div class="swiper-slide-artist" style="background-image: url(./assets/images/artist03.jpg);">
+          <h3 class="text-white fs-2 fs-lg-80">Michael</h3>
           <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
-          <a href="#">MORE</a>
+          <button class="btn btn-triangle btn-white btn-border">MORE</button>
         </div>
-        <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        <div class="d-lg-none p-4 mt-4" style="background-color: rgba(255, 255, 255, 0.85)">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
       </div>
+      <div class="swiper-slide">
+        <div class="swiper-slide-artist" style="background-image: url(./assets/images/artist04.jpg);">
+          <h3 class="text-white fs-2 fs-lg-80">Michael</h3>
+          <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <button class="btn btn-triangle btn-white btn-border">MORE</button>
+        </div>
+        <div class="d-lg-none p-4 mt-4" style="background-color: rgba(255, 255, 255, 0.85)">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</div>
+      </div>      
     </div>
-    <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
   </div>
 </section>
@@ -251,7 +256,7 @@ current: index
     <button class="btn btn-triangle btn-border">MORE</button>
   </div>
   <div class="row artworks gy-3 gx-4 gy-lg-5" data-masonry='{"percentPosition": true}'>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art09.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -268,7 +273,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">區塊戀-他的私生活</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art10.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -285,7 +290,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">夏娃的醜聞</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art02.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -302,7 +307,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">藍色啤酒海</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art11.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -319,7 +324,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">沒有人愛我</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art12.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -336,7 +341,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">不哭不哭眼淚是珍珠</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art03.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -353,7 +358,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">十分鐘就到</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art04.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -370,7 +375,7 @@ current: index
           <h5 class="fs-14 fs-lg-3 fw-bold py-2 py-lg-3 border-bottom-lg">我這樣有美嗎</h5>
       </div>
     </div>
-    <div class="col-6 col-lg-4 col-xxl-3 mb-3">
+    <div class="col-sm-6 col-lg-4 col-xxl-3 mb-3">
       <div class="artwork-item">
         <div class="position-relative">
           <img src="./assets/images/art27.jpg" alt="" class="img-fluid border border-8 border-lg-24 border-white">    
@@ -397,26 +402,26 @@ current: index
 <section class="text-center pt-5 pt-lg-80">
   <h2 class="text-center fs-2 fs-lg-1 mb-3">Join Us</h2>
   <p class="text-center fs-4 mb-32 mb-lg-40">創建並出售你的藝術品</p>
-  <div class="border border-start-0 border-end-0 border-4 py-1">
-    <div class="border border-start-0 border-end-0 py-5 py-lg-0">
-      <div class="container">
+  <div class="border-top border-4 py-1">
+    <div class="border-top py-5 py-lg-0">
+      <div class="container py-lg-80">
         <div class="row ">
-          <div class="col-lg-3 py-4">
+          <div class="col-lg-3 py-4 py-lg-0">
             <span class="text-primary fs-40 mb-3"><i class="fa-solid fa-wallet"></i></span>
             <h3 class="fs-5 fw-bold lh-base mb-4 fw-bold">設置你的錢包</h3>
             <p class="lh-base">設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>        
           </div>
-          <div class="col-lg-3 py-4">
+          <div class="col-lg-3 py-4 py-lg-0">
             <span class="text-primary fs-40 mb-3"><i class="fa-solid fa-pen-ruler"></i></span>
             <h3 class="fs-5 fw-bold lh-base mb-4 fw-bold">創建您的主頁</h3>
             <p class="lh-base">註冊成為會員，編輯您的資料<br>讓大家了解你</p>
           </div>
-          <div class="col-lg-3 py-4">
+          <div class="col-lg-3 py-4 py-lg-0">
             <span class="text-primary fs-40 mb-3"><i class="fa-solid fa-icons"></i></span>
             <h3 class="fs-5 fw-bold lh-base mb-4 fw-bold noto-sans">添加你的 NFT</h3>
             <p class="lh-base">上傳你的作品<br>添加標題和描述</p>
           </div>
-          <div class="col-lg-3 py-4">
+          <div class="col-lg-3 py-4 py-lg-0">
             <span class="text-primary fs-40 mb-3"><i class="fa-solid fa-tags"></i></span>
             <h3 class="fs-5 fw-bold lh-base mb-4 fw-bold">列出它們出售</h3>
             <p class="lh-base noto-sans">選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
